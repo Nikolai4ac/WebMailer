@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <script></script>
     <title>WebMailer ltd. | Register</title>
 </head>
 <body>
-    
+    <div id="register-content-holder">    
+        <form id="registerPanelMenu" autocomplete="off">
+        <input id="firstName" name="fname" placeholder="First name" required></input>
+        <input id="lastName" name="lname" placeholder="Last name" required></input>
+        <input id="accountEmail" name="email" placeholder="YourEmail@domain.com" requried></input>
+        <input id="firstEnteredPassword" name="firstpass" placeholder="Password" required></input>
+        <input id="secondEnteredPassword" name="secondpass" placeholder="Repeat Password" required></input>
+        <button id="createAccountBtn">Create Account</button>
+        </form>
+    </div>
+    <script src="../js/register/inputManipulation.js"></script>
 </body>
 </html>

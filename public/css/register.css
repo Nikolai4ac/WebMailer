@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(32, 35, 56);
+}
+
+#register-content-holder{
+    display:flex;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: 25%;
+    padding: 100px 25px 250px 25px;
+}
+#registerPanelMenu {
+    border: 1px solid rgb(126, 76, 172);
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 100px 100px 215px 100px;
+}
+input {
+    display: block;
+    width: 300px;
+    padding: 20px 15px 20px 15px;
+    margin-top: 5.5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(110, 66, 151);
+    outline: none;
+    color: white;
+}
+::placeholder {
+    color: white;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+#createAccountBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: rgba(219, 184, 255, 0.185);
+    outline: none;
+    border: none;
+    color: white;
+    font-family: "Mont", sans-serif;
+}
+#createAccountBtn:hover {
+    cursor: pointer;
+    background-color: rgba(219, 184, 255, 0.385);
+    transition-duration: 0.5s;
+}
+input:hover {
+    border-bottom: 2px solid rgb(162, 70, 248);
+    transition-duration: 0.5s;
+}
+@media screen and (max-width: 700px)  {
+    body {
+        overflow-x: hidden;
+    }
+   #registerPanelMenu {
+    width: auto;
+    border: none;
+   }
+   input {
+    width: auto;
+   }
+}

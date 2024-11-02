@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(32, 35, 56);
+    height: 50vh;
+}
+#btnContainers {
+    display: flex;
+    justify-content: center;
+    position:static;
+    margin-top: 25%;
+
+}
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(53, 37, 99);
+    width: 150px;
+    padding: 25px 65px 25px 65px;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Mont", sans-serif;
+    color: white;
+}
+.btn:hover {
+    transition-duration: 0.4s;
+    border-color: rgb(202, 0, 185);
+    cursor:pointer;
+    background-color: rgba(158, 58, 197, 0.3);
+}
+@media screen and (max-width: 650px) {
+    #btns {
+        display: block;
+    }
+    #btnContainers {
+        align-items: center;
+        width: 90%;
+        position: relative;
+        top: 30%;
+        
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}
