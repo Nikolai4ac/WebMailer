@@ -31,6 +31,10 @@ input {
 input:focus::placeholder {
     color: transparent;
 }
+input:hover {
+    border-bottom: 2px solid rgb(162, 70, 248);
+    transition-duration: 0.5s;
+}
 #createAccountBtn {
     width: 100%;
     padding: 10px;
@@ -41,14 +45,21 @@ input:focus::placeholder {
     color: white;
     font-family: "Mont", sans-serif;
 }
+#msgs {display: none}
 #createAccountBtn:hover {
     cursor: pointer;
     background-color: rgba(219, 184, 255, 0.385);
     transition-duration: 0.5s;
 }
-input:hover {
-    border-bottom: 2px solid rgb(162, 70, 248);
-    transition-duration: 0.5s;
+#fNameMessages, #lNameMessages {
+    list-style-type: none;
+    color: white;
+    padding: 0px;
+}
+#lettersRequired, #symbolsRestriction, #lettersRequire, #symbolsRestricted {
+    font-size: 14px;
+    color: rgb(255, 76, 76);
+    font-family: "Mont", sans-serif;
 }
 @media screen and (max-width: 700px)  {
     body {

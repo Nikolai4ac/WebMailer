@@ -15,7 +15,7 @@ body{
     gap: 50px;
 }
 .btn{
-    border: 2px solid white;
+    border: 0.2px solid rgba(255, 255, 255, 0.226);
     border-radius: 10px;
     background-color: rgb(53, 37, 99);
     width: 150px;

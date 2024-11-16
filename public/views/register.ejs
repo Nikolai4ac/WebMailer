@@ -9,13 +9,25 @@
 </head>
 <body>
     <div id="register-content-holder">    
-        <form id="registerPanelMenu" autocomplete="off">
+        <form id="registerPanelMenu" autocomplete="off" method="POST">
         <input id="firstName" name="fname" placeholder="First name" required></input>
+        <div id="firstNameMessages">
+            <ul id="fNameMessages">
+                <li id="lettersRequired">First name must contain more than 3 symbols</li>
+                <li id="symbolsRestriction">First name must contain only letters</li>
+            </ul>
+        </div>
         <input id="lastName" name="lname" placeholder="Last name" required></input>
+        <div id="lastNameMessages">
+            <ul id="lNameMessages">
+                <li id="lettersRequire">Last name must contain more than 3 symbols</li>
+                <li id="symbolsRestricted">Last name must contain only letters</li>
+            </ul>
+        </div>
         <input id="accountEmail" name="email" placeholder="YourEmail@domain.com" requried></input>
-        <input id="firstEnteredPassword" name="firstpass" placeholder="Password" required></input>
-        <input id="secondEnteredPassword" name="secondpass" placeholder="Repeat Password" required></input>
-        <button id="createAccountBtn">Create Account</button>
+        <input id="firstEnteredPassword" name="firstpass" placeholder="Password" required type="password"></input>
+        <input id="secondEnteredPassword" name="secondpass" placeholder="Repeat Password" required type="password"></input>
+        <button id="createAccountBtn" type="submit">Create Account</button>
         </form>
     </div>
     <script src="../js/register/inputManipulation.js"></script>
